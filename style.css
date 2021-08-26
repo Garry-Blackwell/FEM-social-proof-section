@@ -7,15 +7,15 @@
 }
 
 body {
+background-repeat:no-repeat;
 font-family: 'Spartan', sans-serif;
 background-color: #fff;
+background-image:url("images/bg-pattern-top-desktop.svg");
 }
 
-.page-wrapper {
-    position: relative;
 
-}
 .main {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,9 +51,9 @@ background-color: #fff;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-items: flex-end; */
     padding: 20px;
     max-width: 1200px;
+    margin-right: 150px;
 }
 
 .rating-main {
@@ -83,7 +83,7 @@ background-color: #fff;
 }
 
 .review {
-    display: grid;
+    display: flex;
     background-color: #fff;
     grid-template-columns: repeat(3, 2fr);
     padding: 10px;
@@ -93,6 +93,7 @@ background-color: #fff;
 .review-grid {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     justify-content: center;
     height: 300px;
     width: 400px;
@@ -100,32 +101,104 @@ background-color: #fff;
     border-radius: 15px;
 }
 
-.review p {
-    color:  hsl(0, 0%, 100%);
-    font-weight: 500;
-}
 
-.review h3 {
-    color: hsl(0, 0%, 100%);
-    padding: 10px;
 
-}
 
-.review h4 {
-   color: hsl(333, 80%, 67%);
-   font-weight: 400;
-}
 
-.review img {
+.review-cards {
     display: flex;
+    width: 1400px;
+    height: 700px; 
+    margin-left: 150px;
+    gap: 5%;
+}
+
+.card-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 250px;
+    width: 380px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+}
+
+.card-one-photo {
+    margin-top: 15px;
+}
+
+
+.card-one img {
     width: 50px;
     height: 50px;
+}
+
+
+
+
+.card-header {
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 60px;
+}
+
+.card-text {
+    width: 80%;
+    color: hsl(0, 0%, 100%);
+    margin-left: 35px;
+}
+
+.card-two {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 250px;
+    width: 380px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+    
+}
+
+.card-two img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.card-two-photo {
+    margin-top: 15px;
+}
+
+
+.card-three {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 380px;
+    margin-top: 100px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+
+}
+
+.card-three img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-three-photo {
+    margin-top: 15px;
+}
+
+
+.review-cards img {
     border-radius: 25px;
 }
 
-.container-grid {
+
+.card-wrapper {
     display: flex;
-    justify-content: space-between;
-    margin-left: 120px;
-    padding: 30px;
+    margin-left: 35px;
+    margin-top: 35px;
 }
