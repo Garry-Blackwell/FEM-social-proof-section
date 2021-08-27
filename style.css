@@ -213,3 +213,32 @@ background-position: top left, bottom right;
     color: hsl(333, 80%, 67%);
     font-weight: 500;
 }
+
+/* Media queries */
+
+@media (max-width: 650px) {
+    .main {
+        flex-direction: column;
+    }
+    .rating-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 120px;
+    }
+    .box-2 {
+        margin-left: 0px;
+    }
+    .box-3 {
+        margin-left: 0px;
+    }
+    .review-cards {
+        flex-direction: column;
+        gap: 0%;
+    }
+    .card-two {
+        margin-top: 20px;
+    }
+    .card-three {
+        margin-top: 20px;
+    }
+}
