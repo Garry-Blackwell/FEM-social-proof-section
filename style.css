@@ -236,4 +236,7 @@ background-position: top left, bottom right;
     .card-three {
         margin-top: 20px;
     }
+    .review-cards {
+        height: 100%;
+    }
 }
